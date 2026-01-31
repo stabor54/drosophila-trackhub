@@ -1,5 +1,5 @@
-hub DrosophilaOverlay
-shortLabel Drosophila Tracks
-longLabel Drosophila bigWig Tracks with Overlay
+hub MyOverlayHub
+shortLabel My Overlay
+longLabel My BigWig Overlay Tracks
 genomesFile genomes.txt
-email your.email@example.com
+email tabor@hms.harvard.edu
