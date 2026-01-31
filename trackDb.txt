@@ -1,0 +1,28 @@
+track totalComposite
+compositeTrack on
+shortLabel Total Tracks
+longLabel Total A and E bigWig Tracks
+type bigWig
+visibility full
+maxHeightPixels 100:50:8
+autoScale on
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+    track totalE
+    parent totalComposite
+    shortLabel Total E
+    longLabel Total E Fixed Filtered
+    type bigWig
+    bigDataUrl https://dl.dropboxusercontent.com/scl/fi/mhielwl43pi4n1fnecybk/total_E_fixed_filtered.bw?rlkey=vhl49ysv3rtdcsxek4giiqbx1&dl=1
+    color 255,0,0
+    visibility full
+
+    track totalA
+    parent totalComposite
+    shortLabel Total A
+    longLabel Total A Fixed
+    type bigWig
+    bigDataUrl https://dl.dropboxusercontent.com/scl/fi/oayyb9f3nyeprd30v3683/total_A_fixed.bw?rlkey=nlar2lyztmyd2pao8bkd1q6q1&dl=1
+    color 0,0,255
+    visibility full
