@@ -1,28 +1,27 @@
-track totalComposite
-compositeTrack on
-shortLabel Total Tracks
-longLabel Total A and E bigWig Tracks
-type bigWig
-visibility full
-maxHeightPixels 100:50:8
-autoScale on
+track overlay
+container multiWig
 aggregate transparentOverlay
 showSubtrackColorOnUi on
+type bigWig
+shortLabel Overlay Tracks
+longLabel My Overlay BigWig Tracks
+visibility full
+maxHeightPixels 100:50:8
 
-    track totalE
-    parent totalComposite
-    shortLabel Total E
-    longLabel Total E Fixed Filtered
+    track track1
+    parent overlay
     type bigWig
     bigDataUrl https://dl.dropboxusercontent.com/scl/fi/mhielwl43pi4n1fnecybk/total_E_fixed_filtered.bw?rlkey=vhl49ysv3rtdcsxek4giiqbx1&dl=1
+    shortLabel Track1
+    longLabel Track 1 Red
     color 255,0,0
-    visibility full
+    autoScale on
 
-    track totalA
-    parent totalComposite
-    shortLabel Total A
-    longLabel Total A Fixed
+    track track2
+    parent overlay
     type bigWig
     bigDataUrl https://dl.dropboxusercontent.com/scl/fi/oayyb9f3nyeprd30v3683/total_A_fixed.bw?rlkey=nlar2lyztmyd2pao8bkd1q6q1&dl=1
+    shortLabel Track2
+    longLabel Track 2 Blue
     color 0,0,255
-    visibility full
+    autoScale on
